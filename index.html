@@ -164,10 +164,17 @@ td.num{text-align:right}
     <select id="sel-disc-vue" onchange="renderDisc()">
       <option value="n">Effectifs</option><option value="p">% du profil</option>
     </select>
+    <label>Saison (camembert) :</label>
+    <select id="sel-disc-pie-s" onchange="renderDisc()">
+      <option value="2025">2025</option>
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+    </select>
   </div>
   <div class="r2">
     <div class="card"><p class="card-title">Évolution pratiquants par discipline</p><div class="legend" id="leg-disc"></div><div class="cw" style="height:250px"><canvas id="c-disc-evo"></canvas></div></div>
-    <div class="card"><p class="card-title">Répartition disciplines 2026</p><div class="cw" style="height:250px"><canvas id="c-disc-pie"></canvas></div></div>
+    <div class="card"><p class="card-title">Répartition disciplines — saison sélectionnée</p><div class="cw" style="height:250px"><canvas id="c-disc-pie"></canvas></div></div>
   </div>
   <div class="card">
     <p class="card-title">Tableau — pratiquants uniques par discipline et saison</p>
